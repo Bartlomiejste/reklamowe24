@@ -1,0 +1,75 @@
+/*Style to navigation*/
+.navigationWrapper {
+  display: flex;
+  padding: 20px 90px;
+  width: 100%;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.navigation__icon {
+  display: flex;
+  align-items: center;
+}
+
+
+.keylock__icon,
+.basket__icon {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.keylock__icon {
+  width: 35px;
+  height: 20px;
+}
+
+.navigation__contact {
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+
+/*Style to search input*/
+.search__container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #e1e1e1;
+}
+
+.search__input {
+  border: none;
+  outline: none;
+  padding: 15px 16px;
+  border-radius: 20px 0 0 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search__icon {
+  background-color: black;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search__icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}

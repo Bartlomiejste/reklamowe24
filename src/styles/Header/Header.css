@@ -1,0 +1,48 @@
+.header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 90px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.header__information {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 175px;
+    height: 55px;
+}
+
+.header__button {
+    background-color: #132233;
+    color: #fff;
+    font-size: 16px;
+    padding: 9.5px 20px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.header__email,
+.header__phone {
+    display: flex;
+    align-items: center;
+    margin: 0 7px;
+}
+
+.header__phone--contact,
+.header__email--contact {
+    padding: 0 5px;
+}
+
+.header__email--contact.revealed,
+.header__phone--contact.revealed {
+    text-decoration: underline;
+    color: #2395D6;
+    cursor: pointer;
+}
