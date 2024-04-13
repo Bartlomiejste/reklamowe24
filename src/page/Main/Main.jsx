@@ -1,13 +1,8 @@
-import React from 'react'
-import Layout from '../../components/layout/Layout'
+import React from "react";
+import Layout from "../../components/layout/Layout";
 
 const Main = () => {
+  return <Layout></Layout>;
+};
 
-  return (
-  <Layout>
-
-  </Layout>
-  )
-}
-
-export default Main
+export default Main;

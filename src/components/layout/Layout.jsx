@@ -4,13 +4,12 @@ import Footer from "../Footer/Footer.jsx";
 import Header from "../Header/Header.jsx";
 
 const Layout = ({ children }) => {
-
   return (
     <>
-      <Header/>
-      <Navigation/>
+      <Header />
+      <Navigation />
       {children}
-      <Footer/>
+      <Footer />
     </>
   );
 };

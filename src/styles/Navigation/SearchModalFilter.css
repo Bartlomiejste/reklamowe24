@@ -1,0 +1,21 @@
+.filter__wrapper {
+    border: 1px solid #ddd
+}
+
+.filter__item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.filter__item:last-child {
+    border-bottom: none;
+}
+
+.filter__item:before {
+    content: '➔';
+    margin-right: 10px;
+    color: #aaa;
+}
