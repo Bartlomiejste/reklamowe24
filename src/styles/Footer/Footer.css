@@ -1,0 +1,58 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter h2,
+.link-column h3 {
+    margin-bottom: 1rem;
+}
+
+.newsletter-input-group {
+    display: flex;
+}
+
+.newsletter-input-group input {
+    flex: 1;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.newsletter-input-group button {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.link-column {
+    /* Styling for the links section */
+}
+
+.link-column h3 {
+    margin-bottom: 0.5rem;
+}
+
+.social-media {
+    /* Styling for social media icons */
+}
+
+/* You might want to add responsive styles to make sure the footer
+     looks good on all devices */
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 1rem;
+    }
+}
