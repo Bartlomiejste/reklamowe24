@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/Navigation/Navigation.css";
 import keylockIcon from "../../assets/keylock-black.png";
 import basketIcon from "../../assets/basket-black.png";
 import searchIcon from "../../assets/search.svg";
 import SearchModal from "./SearchModal";
 import DropdownMenu from "../../utils/DropdownMenu/DropdownMenu";
+import ScrollToTopButton from "../ScrollToTopButton/ScrollToTopButton";
 
 const gadgetsItems = [
   { label: "Do biura" },
@@ -44,6 +45,24 @@ const discountsItems = [
 
 const Navigation = () => {
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+  const handleScroll = () => {
+    const triggerHeight = 76;
+    if (window.scrollY >= triggerHeight) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const openSearchModal = () => {
     setIsSearchModalOpen(true);
@@ -55,7 +74,7 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className="navigationWrapper">
+      <nav className={`navigationWrapper ${isSticky ? "sticky" : ""}`}>
         <div className="navigation">
           <DropdownMenu
             title="Oferta gadżetów"

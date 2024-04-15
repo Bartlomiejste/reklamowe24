@@ -4,6 +4,14 @@
   padding: 10px 90px;
   width: 100%;
   border-bottom: 1px solid #EEEEEE;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navigation {

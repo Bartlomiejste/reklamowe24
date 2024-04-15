@@ -2,6 +2,7 @@ import React from "react";
 import Main from "./page/Main/Main";
 import ErrorBoundary from "./utils/ErrorBoundary/ErrorBoundary";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 
 const App = () => {
   return (

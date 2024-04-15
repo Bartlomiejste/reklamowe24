@@ -1,9 +1,21 @@
-import React from 'react'
+import React from "react";
 
 const ErrorBoundaryRefresh = () => {
   return (
-    <div>ErrorBoundaryRefresh</div>
-  )
-}
+    <div
+      style={{
+        background: "#000",
+        height: "100vh",
+        width: "100vw",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        color: "#fff",
+      }}
+    >
+      Something does wrong... Try refresh a page
+    </div>
+  );
+};
 
-export default ErrorBoundaryRefresh
+export default ErrorBoundaryRefresh;
