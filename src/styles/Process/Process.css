@@ -1,0 +1,9 @@
+.process__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-color: #EFF2FB;
+    border-bottom: 1px solid #ddd;
+}

@@ -1,7 +1,7 @@
-/*Style to navigation*/
+/*Style navigation*/
 .navigationWrapper {
   display: flex;
-  padding: 20px 90px;
+  padding: 10px 90px;
   width: 100%;
   border-bottom: 1px solid #EEEEEE;
 }
@@ -17,7 +17,6 @@
   display: flex;
   align-items: center;
 }
-
 
 .keylock__icon,
 .basket__icon {
@@ -38,8 +37,7 @@
   cursor: pointer;
 }
 
-
-/*Style to search input*/
+/*Style search input*/
 .search__container {
   display: flex;
   align-items: center;

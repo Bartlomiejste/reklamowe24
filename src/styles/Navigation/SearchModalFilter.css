@@ -1,21 +1,42 @@
 .filter__wrapper {
-    border: 1px solid #ddd
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.filter__items {
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.filter__items:hover {
+    background-color: #f8f9fa;
+}
+
+.filter__items:last-child {
+    border-bottom: none;
 }
 
 .filter__item {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
     cursor: pointer;
     display: flex;
     align-items: center;
-}
-
-.filter__item:last-child {
-    border-bottom: none;
+    font-weight: 700;
 }
 
 .filter__item:before {
-    content: '➔';
     margin-right: 10px;
     color: #aaa;
+}
+
+.filter__title {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 8px 15px 0px 15px;
+}
+
+.filter__icon {
+    text-align: center;
+    justify-content: center;
+    margin-right: 10px;
 }

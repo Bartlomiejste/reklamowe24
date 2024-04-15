@@ -1,0 +1,39 @@
+.category__wrapper {
+    padding: 20px 0px 40px 90px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.category__title {
+    font-size: 48px;
+    line-height: 58px;
+    color: rgb(33, 37, 41);
+}
+
+.category-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-dot {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: width 0.3s ease;
+}
+
+.nav-dot.active {
+    width: 30px;
+    background: #90ee90;
+    border-radius: 10px;
+}

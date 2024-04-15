@@ -1,24 +1,41 @@
 import React from "react";
 import "../../styles/Navigation/SearchModal.css";
-import FilterList from "./SearchModalFilter";
+import FilterList from "../../utils/SearchModalFilter/SearchModalFilter";
+import selectIcon from "../../assets/select.png";
+import navigationIcon from "../../assets/navigation.png";
+import escapeIcon from "../../assets/escape.png";
 
 const SearchModal = ({ isOpen, close }) => {
   if (!isOpen) return null;
 
   return (
     <>
-      <div className="modal-overlay" onClick={close} />
-      <div className="search-modal">
+      <div className="modal__overlay" onClick={close} />
+      <div className="search__modal">
         <input
           type="text"
-          className="search-modal-input"
+          className="search__modal-input"
           placeholder="Szukaj produktu"
         />
         <FilterList />
-        <div className="search-modal-footer">
-          <span>Wybór</span>
-          <span>Nawigacja</span>
-          <span>Zamknięcie</span>
+        <hr className="search__modal-divider" />
+        <div className="search__modal-footer">
+          <span>
+            <img src={selectIcon} alt="select icon" className="icon__modal" />
+            Wybór
+          </span>
+          <span>
+            <img
+              src={navigationIcon}
+              alt="navigation icon"
+              className="icon__modal"
+            />
+            Nawigacja
+          </span>
+          <span>
+            <img src={escapeIcon} alt="escape icon" className="icon__modal" />
+            Zamknięcie
+          </span>
         </div>
       </div>
     </>

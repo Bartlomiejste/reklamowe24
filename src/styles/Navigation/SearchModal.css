@@ -1,4 +1,4 @@
-.modal-overlay {
+.modal__overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -8,9 +8,7 @@
     z-index: 99;
 }
 
-
-/* SearchModal.css */
-.search-modal {
+.search__modal {
     background-color: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -23,7 +21,7 @@
     z-index: 100;
 }
 
-.search-modal-input {
+.search__modal-input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -32,10 +30,34 @@
     font-size: 16px;
 }
 
-.search-modal-footer {
+.search__modal-footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 20px;
-    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    gap: 15px;
+}
+
+
+.search__modal-divider {
+    border: none;
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 35px 0px 10px -20px;
+    width: calc(100% + 40px);
+}
+
+
+.search__modal-footer span {
+    display: flex;
+    align-items: center;
+    color: #888B8D;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.icon__modal {
+    text-align: center;
+    justify-content: center;
+    margin-right: 10px;
 }

@@ -1,0 +1,57 @@
+.slider-container {
+    height: 600px;
+    overflow-x: hidden;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.custom-dot {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.custom-dot.active {
+    background: #C2E796;
+}
+
+.slick-dots li button:before {
+    content: none;
+}
+
+.slick-dots li.slick-active button:before {
+    content: none;
+}
+
+.dot__title {
+    color: rgb(131, 131, 131);
+    font-size: 16px;
+    line-height: 24px;
+    width: 300px;
+    margin-top: 5px;
+    margin: 5px 500px;
+}
+
+.dot__title.active-title {
+    color: #000000;
+}
+
+.slider__picture {
+    width: 90%;
+    border-radius: 17px;
+    margin: 12px auto;
+}
+
+.dot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+}
+
+.dots {
+    display: flex;
+    justify-content: space-evenly;
+}
