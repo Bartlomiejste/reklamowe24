@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../../styles/ScrolltoTopButton/ScrollToTopButton.css";
+import "../../styles/ScrollToTopButton/ScrollToTopButton.css";
 import arrowUpIcon from "../../assets/scrolltotopbutton/arrowup.png";
 
 const ScrollToTopButton = () => {
