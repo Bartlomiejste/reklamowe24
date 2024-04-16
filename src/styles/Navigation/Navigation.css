@@ -8,6 +8,12 @@
   z-index: 999;
 }
 
+@media (max-width: 1199px) {
+  .navigation__wrapper {
+    display: none;
+  }
+}
+
 .sticky {
   position: fixed;
   top: 0;

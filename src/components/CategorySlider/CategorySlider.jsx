@@ -53,7 +53,11 @@ const CategorySlider = () => {
       <Slider ref={sliderRef} {...settings}>
         {categories.map((category, index) => (
           <div key={index} className="category__slide">
-            <img src={category.Icon} alt={category.name} />
+            <img
+              src={category.Icon}
+              alt={category.name}
+              className="category__img"
+            />
           </div>
         ))}
       </Slider>

@@ -1,0 +1,33 @@
+.hamburger {
+    display: none;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background: black;
+}
+
+
+@media (max-width: 1199px) {
+    .hamburger {
+        display: flex;
+        padding: 30px 0px;
+        justify-content: space-around;
+        align-items: center;
+        width: 320px;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+    }
+
+    .hamburger__logo {
+        width: 100px;
+        margin-left: -40px;
+    }
+
+    .hamburger__icon {
+        width: 20px;
+    }
+}
