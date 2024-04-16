@@ -9,6 +9,12 @@
     border-bottom: 1px solid #EEEEEE;
 }
 
+@media (max-width: 1199px) {
+    .header {
+        display: none;
+    }
+}
+
 .header__information {
     display: flex;
     align-items: center;

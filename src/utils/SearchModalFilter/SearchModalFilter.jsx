@@ -1,6 +1,6 @@
 import React from "react";
-import "../../styles/Navigation/SearchModalFilter.css";
-import modalIcon from "../../assets/modalicon.png";
+import "../../styles/SearchModalFilter/SearchModalFilter.css";
+import modalIcon from "../../assets/searchmodalfilter/modalicon.png";
 
 const FilterList = () => {
   const titles = ["Popularne"];

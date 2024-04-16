@@ -4,6 +4,7 @@ import SimpleSlider from "../../components/Slider/SimpleSlider";
 import CategorySlider from "../../components/CategorySlider/CategorySlider";
 import Bestsellery from "../../components/Bestsellery/Bestsellery";
 import Process from "../../components/Process/Process";
+import ScrollToTopButton from "../../utils/ScrolltoTopButton/ScrollToTopButton";
 
 const Main = () => {
   return (
@@ -12,6 +13,7 @@ const Main = () => {
       <CategorySlider />
       <Bestsellery />
       <Process />
+      <ScrollToTopButton />
     </Layout>
   );
 };

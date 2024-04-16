@@ -9,7 +9,7 @@
     color: rgb(33, 37, 41);
 }
 
-.category-slide {
+.category__slide {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,12 +17,12 @@
     padding: 10px;
 }
 
-.slider-nav {
+.slider__nav {
     display: flex;
     justify-content: center;
 }
 
-.nav-dot {
+.nav__dot {
     width: 10px;
     height: 10px;
     background: #ccc;
@@ -32,7 +32,7 @@
     transition: width 0.3s ease;
 }
 
-.nav-dot.active {
+.nav__dot.active {
     width: 30px;
     background: #90ee90;
     border-radius: 10px;

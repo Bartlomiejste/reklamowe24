@@ -1,23 +1,14 @@
-.scroll-to-top {
+#scrollToTopButton {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 150px;
+    right: 100px;
     z-index: 1000;
-}
-
-.scroll-to-top-button {
-    background-color: #f0f0f0;
     border: none;
-    border-radius: 50%;
-    padding: 10px;
+    background-color: transparent;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-
-.scroll-to-top.visible {
-    display: flex;
+.body-no-scroll {
+    overflow: hidden;
+    transition: overflow 0.3s;
 }

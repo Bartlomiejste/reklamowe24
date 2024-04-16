@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png";
-import emailIcon from "../../assets/email.svg";
-import phoneIcon from "../../assets/phone.svg";
+import logo from "../../assets/header/logo.png";
+import emailIcon from "../../assets/header/email.svg";
+import phoneIcon from "../../assets/header/phone.svg";
 import "../../styles/Header/Header.css";
 
 const Header = () => {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/Footer/Footer.css";
-import socialMedia from "../../assets/socialMedia.png";
-import logo from "../../assets/logofooter.png";
+import socialMedia from "../../assets/footer/socialMedia.png";
+import logo from "../../assets/footer/logofooter.png";
 
 const Footer = () => {
   const [isEmailVisible, setIsEmailVisible] = useState(false);
@@ -91,9 +91,9 @@ const Footer = () => {
               {isPhoneVisibleSecond ? (
                 <a
                   className="footer__phone--contact revealed"
-                  href="tel:+42426305515"
+                  href="tel:+426300508"
                 >
-                  tel. 42 630 55 15
+                  tel. 42 630 05 08
                 </a>
               ) : (
                 <span className="footer__phone--contact">tel. 42</span>

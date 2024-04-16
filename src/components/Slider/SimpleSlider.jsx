@@ -3,9 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../styles/Slider/SimpleSlider.css";
-import bagsIcon from "../../assets/bags.jpg";
-import penIcon from "../../assets/pen.jpg";
-import tshirtIcon from "../../assets/t-shirt.jpg";
+import bagsIcon from "../../assets/slider/bags.jpg";
+import penIcon from "../../assets/slider/pen.jpg";
+import tshirtIcon from "../../assets/slider/t-shirt.jpg";
 
 const images = [penIcon, tshirtIcon, bagsIcon];
 const slideTitles = [
@@ -32,12 +32,12 @@ const SimpleSlider = () => {
     ),
     beforeChange: (current, next) => setActiveSlide(next),
     customPaging: (i) => (
-      <div className="dot-container">
+      <div className="dot__container">
         <span
-          className={`custom-dot ${activeSlide === i ? "active" : ""}`}
+          className={`custom__dot ${activeSlide === i ? "active" : ""}`}
         ></span>
         <span
-          className={`dot__title ${activeSlide === i ? "active-title" : ""}`}
+          className={`dot__title ${activeSlide === i ? "active--title" : ""}`}
         >
           {slideTitles[i]}
         </span>
@@ -46,7 +46,7 @@ const SimpleSlider = () => {
   };
 
   return (
-    <div className="slider-container">
+    <div className="slider__container">
       <Slider {...settings}>
         {images.map((src, index) => (
           <div key={index}>

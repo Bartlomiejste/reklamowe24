@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import "../../styles/Navigation/DropdownMenu.css";
-import boxImg from "../../assets/box.png";
-import arrowIcon from "../../assets/arrowdropdownmenu.svg";
+import "../../styles/DropdownMenu/DropdownMenu.css";
+import boxImg from "../../assets/dropdownmenu/box.png";
+import arrowIcon from "../../assets/dropdownmenu/arrowdropdownmenu.svg";
 
 const DropdownMenu = ({ title, items, width, fontSize, showArrow }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,9 +34,9 @@ const DropdownMenu = ({ title, items, width, fontSize, showArrow }) => {
             <div className="dropdown__columns">
               <ul className="dropdown__column">
                 {items.map((item, index) => (
-                  <li key={index} className="dropdown__item gadget-item">
+                  <li key={index} className="dropdown__item gadget__item">
                     {item.label}
-                    <span className="dropdown__item-arrow">
+                    <span className="dropdown__item--arrow">
                       <img src={arrowIcon} alt="arrow icon"></img>
                     </span>
                   </li>

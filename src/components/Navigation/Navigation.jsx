@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "../../styles/Navigation/Navigation.css";
-import keylockIcon from "../../assets/keylock-black.png";
-import basketIcon from "../../assets/basket-black.png";
-import searchIcon from "../../assets/search.svg";
+import keylockIcon from "../../assets/navigation/keylock-black.png";
+import basketIcon from "../../assets/navigation/basket-black.png";
+import searchIcon from "../../assets/navigation/search.svg";
 import SearchModal from "./SearchModal";
 import DropdownMenu from "../../utils/DropdownMenu/DropdownMenu";
-import ScrollToTopButton from "../ScrollToTopButton/ScrollToTopButton";
 
 const gadgetsItems = [
   { label: "Do biura" },
@@ -74,7 +73,7 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className={`navigationWrapper ${isSticky ? "sticky" : ""}`}>
+      <nav className={`navigation__wrapper ${isSticky ? "sticky" : ""}`}>
         <div className="navigation">
           <DropdownMenu
             title="Oferta gadżetów"

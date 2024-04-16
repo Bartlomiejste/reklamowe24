@@ -11,6 +11,7 @@ const ErrorBoundaryRefresh = () => {
         alignItems: "center",
         justifyContent: "center",
         color: "#fff",
+        fontSize: "26px",
       }}
     >
       Something does wrong... Try refresh a page

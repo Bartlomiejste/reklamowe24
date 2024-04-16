@@ -70,20 +70,20 @@
     align-items: center;
 }
 
-.gadget-item {
+.gadget__item {
     transition: color 0.3s ease, filter 0.3s ease;
 }
 
-.gadget-item:hover {
+.gadget__item:hover {
     color: #888;
     text-decoration: underline;
 }
 
-.gadget-item .dropdown__item-arrow img {
+.gadget__item .dropdown__item--arrow img {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.gadget-item:hover .dropdown__item-arrow img {
+.gadget__item:hover .dropdown__item--arrow img {
     transform: translateX(2px);
     filter: brightness(0) saturate(100%) invert(48%) sepia(0%) saturate(0%) hue-rotate(154deg) brightness(90%) contrast(86%);
 }

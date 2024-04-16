@@ -37,7 +37,7 @@
 .newsletter__button {
     align-items: center;
     background-color: #000;
-    background-image: url(../../assets//arrowfooter.png);
+    background-image: url(../../assets/footer/arrowfooter.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     color: #fff;
@@ -72,7 +72,7 @@
 
 .link__column li {
     padding: 20px 0px;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 .link__column span {
@@ -80,14 +80,14 @@
 }
 
 .link__column p {
-    font-size: 26px;
+    font-size: 20px;
     padding: 20px 0px;
 }
 
 .footer__button {
     background-color: #000;
     color: #fff;
-    font-size: 26px;
+    font-size: 22px;
     padding: 9.5px 20px;
     cursor: pointer;
     border-radius: 50px;
@@ -105,13 +105,13 @@
 .footer__phone--contact,
 .footer__email--contact {
     padding: 0 5px;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 .footer__email--contact.revealed,
 .footer__phone--contact.revealed {
     text-decoration: underline;
-    color: #2395D6;
+    color: #fff;
     cursor: pointer;
     font-size: 26px;
 }
@@ -126,7 +126,7 @@
 }
 
 .footer__end {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #252525;
     padding-top: 30px;
     display: flex;
     align-items: center;

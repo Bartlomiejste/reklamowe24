@@ -14,14 +14,21 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 500px;
-    position: absolute;
-    top: 30px;
+    position: fixed;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
     z-index: 100;
 }
 
-.search__modal-input {
+.search__modal.open {
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+.search__modal--input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -30,7 +37,7 @@
     font-size: 16px;
 }
 
-.search__modal-footer {
+.search__modal--footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -39,7 +46,7 @@
 }
 
 
-.search__modal-divider {
+.search__modal--divider {
     border: none;
     height: 1px;
     background-color: #dcdcdc;
@@ -48,7 +55,7 @@
 }
 
 
-.search__modal-footer span {
+.search__modal--footer span {
     display: flex;
     align-items: center;
     color: #888B8D;
