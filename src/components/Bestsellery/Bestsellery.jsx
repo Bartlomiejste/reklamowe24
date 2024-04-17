@@ -46,6 +46,16 @@ const Bestsellery = () => {
     initialSlide: 0,
     autoplay: false,
     afterChange: null,
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          vertical: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -66,19 +76,21 @@ const Bestsellery = () => {
           </button>
         ))}
       </div>
-      <Slider ref={sliderRef} {...settings}>
-        {isLoading
-          ? Array.from({ length: 4 }, (_, index) => (
-              <ProductCard key={index} isLoading={true} />
-            ))
-          : products.map((product) => (
-              <ProductCard
-                key={product.id}
-                product={product}
-                isLoading={false}
-              />
-            ))}
-      </Slider>
+      <div className="bestsellery__products">
+        <Slider ref={sliderRef} {...settings}>
+          {isLoading
+            ? Array.from({ length: 4 }, (_, index) => (
+                <ProductCard key={index} isLoading={true} />
+              ))
+            : products.map((product) => (
+                <ProductCard
+                  key={product.id}
+                  product={product}
+                  isLoading={false}
+                />
+              ))}
+        </Slider>
+      </div>
       <div className="slider__best">
         <div
           className={`best__dot ${activeChunk === 0 ? "active" : ""}`}

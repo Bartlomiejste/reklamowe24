@@ -6,7 +6,7 @@
 @media (max-width: 1199px) {
     .category__wrapper {
         display: flex;
-        padding: 0 12px;
+        padding: 12px;
     }
 }
 

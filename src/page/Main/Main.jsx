@@ -4,7 +4,7 @@ import SimpleSlider from "../../components/Slider/SimpleSlider";
 import CategorySlider from "../../components/CategorySlider/CategorySlider";
 import Bestsellery from "../../components/Bestsellery/Bestsellery";
 import Process from "../../components/Process/Process";
-import ScrollToTopButton from "../../utils/ScrolltoTopButton/ScrollToTopButton";
+import ScrollToTopButton from "../../utils/ScrollToTopButton/ScrollToTopButton";
 
 const Main = () => {
   return (

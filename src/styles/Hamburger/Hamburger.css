@@ -1,5 +1,15 @@
 .hamburger {
     display: none;
+    padding: 40px 0px 10px 0px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    position: fixed;
+
 }
 
 .hamburger span {
@@ -8,18 +18,9 @@
     background: black;
 }
 
-
 @media (max-width: 1199px) {
     .hamburger {
         display: flex;
-        padding: 30px 0px;
-        justify-content: space-around;
-        align-items: center;
-        width: 320px;
-        position: fixed;
-        z-index: 999;
-        top: 0;
-        left: 0;
     }
 
     .hamburger__logo {

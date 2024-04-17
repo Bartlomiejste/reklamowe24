@@ -12,3 +12,9 @@
     overflow: hidden;
     transition: overflow 0.3s;
 }
+
+@media (max-width: 1199px) {
+    #scrollToTopButton img {
+        display: none;
+    }
+}
