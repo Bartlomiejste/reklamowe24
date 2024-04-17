@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import "../../styles/ScrollToTopButton/ScrollToTopButton.css";
+import "../../styles/ScrollToTop/ScrollToTop.css";
 import arrowUpIcon from "../../assets/scrolltotopbutton/arrowup.png";
 
-const ScrollToTopButton = () => {
+const ScrollToTop = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -32,4 +32,4 @@ const ScrollToTopButton = () => {
   );
 };
 
-export default ScrollToTopButton;
+export default ScrollToTop;
